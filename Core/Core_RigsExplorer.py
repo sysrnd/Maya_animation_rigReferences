@@ -90,7 +90,7 @@ class Core_RigsExplorer(object):
         lastPart = lastPart.split(".m")[0]
         return int(lastPart)
 
-    def validacionArchivo(self, file):
+    def ValidacionArchivo(self, file):
         valido = False
         validoMaster = False
         validoVersion = False
@@ -112,6 +112,7 @@ class Core_RigsExplorer(object):
             sections = file.split("_")
             lastP = sections[-1]
             lastP = lastP.split(".m")[0]
+            lastP = lastP.split("V")[-1]
             try:
                 val = int(lastP)
                 validoVersion = True
@@ -119,5 +120,5 @@ class Core_RigsExplorer(object):
                 pass
 
         valido = validoMaster or validoVersion
-        return [validoMaster, validoVersion]
+        return (validoMaster, validoVersion)
 
