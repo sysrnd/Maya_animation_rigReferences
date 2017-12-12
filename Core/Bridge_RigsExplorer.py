@@ -1,9 +1,9 @@
 from PySide import QtCore, QtGui
 
 
-import Animacion.Maya_animation_rigsExplorer.Core.Core_RigExplorer
-reload(Animacion.Maya_animation_rigsExplorer.Core.Core_RigExplorer)
-from Animacion.Maya_animation_rigsExplorer.Core.Core_RigExplorer import *
+import Animacion.Maya_animation_rigsExplorer.Core.Core_RigsExplorer
+reload(Animacion.Maya_animation_rigsExplorer.Core.Core_RigsExplorer)
+from Animacion.Maya_animation_rigsExplorer.Core.Core_RigsExplorer import *
 
 
 class Bridge_RigsExplorer(object):

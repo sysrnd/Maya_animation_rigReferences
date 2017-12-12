@@ -7,9 +7,9 @@ reload(Animacion.Maya_animation_rigsExplorer.UI.Win_Explorer)
 from Animacion.Maya_animation_rigsExplorer.UI.Win_Explorer import *
 
 # TODO ***************************
-import Lighting.ReconnectShaders.Core.Bridge_reconnectShaders
-reload(Lighting.ReconnectShaders.Core.Bridge_reconnectShaders)
-from Lighting.ReconnectShaders.Core.Bridge_reconnectShaders import *
+import Animacion.Maya_animation_rigsExplorer.Core.Bridge_RigsExplorer
+reload(Animacion.Maya_animation_rigsExplorer.Core.Bridge_RigsExplorer)
+from Animacion.Maya_animation_rigsExplorer.Core.Bridge_RigsExplorer import *
 
 
 class MyApplication(QtGui.QMainWindow, Ui_Win_RigExplorer):
@@ -33,7 +33,7 @@ if __name__ != "__main__":
 
     window.setWindowFlags(window.windowFlags())
 
-    bridge = Bridge_reconnectShaders(window=window)
+    bridge = Bridge_RigsExplorer(window=window)
 
     window.show()
 
